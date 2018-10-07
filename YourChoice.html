@@ -1,0 +1,53 @@
+<!Doctype html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Incometax Calculation</title>
+</head>
+<body id="body-style">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand Navbar active" href="index.html">Sonam.com</a>
+</div>
+<ul class="Navbar">
+  <li><a id="active" href="index.html">HOME</a></li>
+  <li><a href="YourChoice.html">YOURCHOICE</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+</ul>
+<br >
+</div>
+<header><b>Please fill the details below for Income tax calculation</b></header><br>
+<div class="row">
+<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3"> </div>
+<div class="col-xs-6 col-md-6 col-sm-6 col-lg-6 form-style">
+<form id="form1">
+<p><b>Income after Standard deduction</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Income" title="Enter your income in dollars" placeholder="Ex:40000" pattern="[0-9]{1,20}" required><br>
+<p><b>Deductions</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Deduction" title="Enter your deductions in dollars" placeholder="Ex:2000" pattern="[0-9]+" required><br>
+<p><b>Location</b><sup style="color:red">*</sup></p>
+<input type="text"  name="Location" title="Enter your location in USA" placeholder="Arizona" pattern="[A-Za-z]+" required><br>
+<p><b>Filling Status</b></p>
+<select id="ddlViewBy">
+<option value="Single">Single</option> 	
+<option value="Married">Married</option>
+<option value="None">None</option>
+</select>
+<button type="button" name="Submit" onclick="IncomeTax()">Submit</button>
+<p id="demo"></p>
+</form>
+</div>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"> </div>
+</div>
+<script src="Tax.js">
+</script>
+</body>
+</html>
+
+
